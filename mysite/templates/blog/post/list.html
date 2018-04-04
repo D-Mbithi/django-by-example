@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
+<ul>
+  {% for post in posts %}
+    <li class="post_list">
+      <h2> <a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+      <p>Published on {{ post.publish }} by {{ post.author }}</p>
+      <div class="post_body">
+        {{ post.body|truncatewords:50|linebreaks}}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include "blog/pagination.html" with page=posts %}
 
 {% endblock %}
