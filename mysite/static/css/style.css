@@ -1,0 +1,55 @@
+html,
+body{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+  color: #006c79;
+  text-decoration: none;
+}
+
+a:active,
+a:hover{
+  color: #657b7d;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Header Styles */
+.header{
+  margin: 0 auto;
+  padding: 0 100px;
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo{
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #078594
+}
+
+.header .nav-menu{
+  display: flex;
+  text-transform: uppercase;
+}
+
+.header .nav-menu .nav-item{
+  padding: 15px;
+}
